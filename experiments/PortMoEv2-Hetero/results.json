@@ -1,0 +1,40 @@
+{
+  "model_kwargs": {
+    "stem_ch": 48,
+    "stage_ch": 64,
+    "cond_dim": 32,
+    "num_experts": 4,
+    "expert_hidden": 64,
+    "heteroscedastic": true
+  },
+  "config": {
+    "batch_size": 256,
+    "epochs": 120,
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "warmup_epochs": 5,
+    "min_lr": 1e-06,
+    "aux_loss_weight": 0.3,
+    "aux_loss_decay": true,
+    "ordinal_thresholds": [
+      0,
+      15,
+      60
+    ],
+    "gnll_warmup_epochs": 10
+  },
+  "best_epoch": 101,
+  "params": 306395,
+  "test_no_tta": {
+    "mae_teu": 6.732,
+    "mae_move": 5.7001,
+    "rmse_teu": 16.9578,
+    "r2_teu": 0.9253
+  },
+  "test_tta": {
+    "mae_teu": 6.0561,
+    "mae_move": 5.1433,
+    "rmse_teu": 15.3035,
+    "r2_teu": 0.9392
+  }
+}

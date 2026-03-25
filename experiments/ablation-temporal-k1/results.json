@@ -1,0 +1,37 @@
+{
+  "version": "ablation-temporal-k1",
+  "temporal_k": 1,
+  "split": "file-level",
+  "seeds": [
+    42,
+    123,
+    456,
+    789
+  ],
+  "val_mae_teu": 6.6606,
+  "val_mae_move": 5.7083,
+  "test_mae_teu": 6.6533,
+  "test_mae_move": 5.543,
+  "test_rmse_teu": 17.7859,
+  "test_rmse_move": 14.6902,
+  "test_r2_teu": 0.9285,
+  "test_r2_move": 0.9345,
+  "per_qc": {
+    "qc=1": {
+      "n": 1547,
+      "mae_teu": 21.01
+    },
+    "qc=2": {
+      "n": 1073,
+      "mae_teu": 12.32
+    },
+    "qc=3": {
+      "n": 864,
+      "mae_teu": 6.52
+    },
+    "qc>=4": {
+      "n": 8331,
+      "mae_teu": 3.27
+    }
+  }
+}

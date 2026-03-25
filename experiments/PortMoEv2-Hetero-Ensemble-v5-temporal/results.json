@@ -1,0 +1,44 @@
+{
+  "version": "v5-temporal",
+  "temporal_k": 3,
+  "seeds": [
+    42,
+    123,
+    456,
+    789
+  ],
+  "n_models": 4,
+  "model_kwargs": {
+    "in_channels": 18,
+    "stem_ch": 48,
+    "stage_ch": 64,
+    "cond_dim": 32,
+    "num_experts": 4,
+    "expert_hidden": 64,
+    "heteroscedastic": true
+  },
+  "config": {
+    "batch_size": 256,
+    "epochs": 120,
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "warmup_epochs": 5,
+    "min_lr": 1e-06,
+    "aux_loss_weight": 0.3,
+    "aux_loss_decay": true,
+    "ordinal_thresholds": [
+      0,
+      15,
+      60
+    ],
+    "gnll_warmup_epochs": 10
+  },
+  "val_mae_teu": 1.6078,
+  "val_mae_move": 1.5839,
+  "test_mae_teu": 1.7054,
+  "test_mae_move": 1.6443,
+  "test_rmse_teu": 4.3423,
+  "test_rmse_move": 4.0238,
+  "test_r2_teu": 0.9951,
+  "test_r2_move": 0.9943
+}

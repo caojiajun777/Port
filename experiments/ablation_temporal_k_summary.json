@@ -1,0 +1,150 @@
+{
+  "1": {
+    "version": "ablation-temporal-k1",
+    "temporal_k": 1,
+    "split": "file-level",
+    "seeds": [
+      42,
+      123,
+      456,
+      789
+    ],
+    "val_mae_teu": 6.6606,
+    "val_mae_move": 5.7083,
+    "test_mae_teu": 6.6533,
+    "test_mae_move": 5.543,
+    "test_rmse_teu": 17.7859,
+    "test_rmse_move": 14.6902,
+    "test_r2_teu": 0.9285,
+    "test_r2_move": 0.9345,
+    "per_qc": {
+      "qc=1": {
+        "n": 1547,
+        "mae_teu": 21.01
+      },
+      "qc=2": {
+        "n": 1073,
+        "mae_teu": 12.32
+      },
+      "qc=3": {
+        "n": 864,
+        "mae_teu": 6.52
+      },
+      "qc>=4": {
+        "n": 8331,
+        "mae_teu": 3.27
+      }
+    }
+  },
+  "2": {
+    "version": "ablation-temporal-k2",
+    "temporal_k": 2,
+    "split": "file-level",
+    "seeds": [
+      42,
+      123,
+      456,
+      789
+    ],
+    "val_mae_teu": 1.7161,
+    "val_mae_move": 1.733,
+    "test_mae_teu": 1.7233,
+    "test_mae_move": 1.6902,
+    "test_rmse_teu": 4.4809,
+    "test_rmse_move": 4.2314,
+    "test_r2_teu": 0.9955,
+    "test_r2_move": 0.9946,
+    "per_qc": {
+      "qc=1": {
+        "n": 1547,
+        "mae_teu": 4.83
+      },
+      "qc=2": {
+        "n": 1073,
+        "mae_teu": 3.57
+      },
+      "qc=3": {
+        "n": 864,
+        "mae_teu": 1.84
+      },
+      "qc>=4": {
+        "n": 8331,
+        "mae_teu": 0.9
+      }
+    }
+  },
+  "4": {
+    "version": "ablation-temporal-k4",
+    "temporal_k": 4,
+    "split": "file-level",
+    "seeds": [
+      42,
+      123,
+      456,
+      789
+    ],
+    "val_mae_teu": 1.8583,
+    "val_mae_move": 1.8195,
+    "test_mae_teu": 1.863,
+    "test_mae_move": 1.7552,
+    "test_rmse_teu": 4.9866,
+    "test_rmse_move": 4.4257,
+    "test_r2_teu": 0.9944,
+    "test_r2_move": 0.9941,
+    "per_qc": {
+      "qc=1": {
+        "n": 1547,
+        "mae_teu": 5.42
+      },
+      "qc=2": {
+        "n": 1073,
+        "mae_teu": 3.65
+      },
+      "qc=3": {
+        "n": 864,
+        "mae_teu": 2.05
+      },
+      "qc>=4": {
+        "n": 8331,
+        "mae_teu": 0.95
+      }
+    }
+  },
+  "5": {
+    "version": "ablation-temporal-k5",
+    "temporal_k": 5,
+    "split": "file-level",
+    "seeds": [
+      42,
+      123,
+      456,
+      789
+    ],
+    "val_mae_teu": 1.9253,
+    "val_mae_move": 1.8591,
+    "test_mae_teu": 1.9355,
+    "test_mae_move": 1.8112,
+    "test_rmse_teu": 5.1568,
+    "test_rmse_move": 4.5734,
+    "test_r2_teu": 0.994,
+    "test_r2_move": 0.9937,
+    "per_qc": {
+      "qc=1": {
+        "n": 1547,
+        "mae_teu": 5.66
+      },
+      "qc=2": {
+        "n": 1073,
+        "mae_teu": 3.73
+      },
+      "qc=3": {
+        "n": 864,
+        "mae_teu": 2.12
+      },
+      "qc>=4": {
+        "n": 8331,
+        "mae_teu": 0.99
+      }
+    }
+  }
+}

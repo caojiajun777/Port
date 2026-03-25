@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Large data files (exceed GitHub 100MB limit)
+processed_data.pt
+提取的所有船区栏动态变化（含饱和时间）/
+
+# OS
+.DS_Store
+Thumbs.db

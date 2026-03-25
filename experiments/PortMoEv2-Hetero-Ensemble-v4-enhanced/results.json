@@ -1,0 +1,71 @@
+{
+  "version": "v4-enhanced",
+  "improvements": [
+    "training augmentation (flip+noise+cutout)",
+    "SWA (last 20 epochs)",
+    "rich TTA (8-way)",
+    "bias correction"
+  ],
+  "seeds": [
+    42,
+    123,
+    456,
+    789
+  ],
+  "n_models": 4,
+  "model_kwargs": {
+    "stem_ch": 48,
+    "stage_ch": 64,
+    "cond_dim": 32,
+    "num_experts": 4,
+    "expert_hidden": 64,
+    "heteroscedastic": true
+  },
+  "config": {
+    "batch_size": 256,
+    "epochs": 120,
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "warmup_epochs": 5,
+    "min_lr": 1e-06,
+    "aux_loss_weight": 0.3,
+    "aux_loss_decay": true,
+    "ordinal_thresholds": [
+      0,
+      15,
+      60
+    ],
+    "gnll_warmup_epochs": 10,
+    "aug_noise_std": 0.05,
+    "aug_cutout_prob": 0.3,
+    "aug_cutout_h": 2,
+    "aug_cutout_w": 5,
+    "swa_start_epoch": 100,
+    "tta_noise_std": 0.03,
+    "tta_noise_runs": 3
+  },
+  "best_tta_mode": "simple_tta",
+  "simple_tta": {
+    "test_mae_teu": 5.1137,
+    "test_mae_move": 4.4051,
+    "test_r2_teu": 0.9539
+  },
+  "rich_tta": {
+    "test_mae_teu": 5.1229,
+    "test_mae_move": 4.4127,
+    "test_r2_teu": 0.9538
+  },
+  "rich_tta_corrected": {
+    "test_mae_teu": 5.1382,
+    "test_mae_move": 4.4207,
+    "test_r2_teu": 0.9538
+  },
+  "val_mae_teu": 4.9143,
+  "val_mae_move": 4.227,
+  "test_mae_teu": 5.1137,
+  "test_mae_move": 4.4051,
+  "test_rmse_teu": 13.329,
+  "test_rmse_move": 11.5526,
+  "test_r2_teu": 0.9539,
+  "test_r2_move": 0.9526
+}

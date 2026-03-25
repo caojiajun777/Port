@@ -1,0 +1,48 @@
+{
+  "version": "v2",
+  "improvements": [
+    "file-level split",
+    "sheet_index conditioning"
+  ],
+  "seeds": [
+    42,
+    123,
+    456,
+    789
+  ],
+  "n_models": 4,
+  "model_kwargs": {
+    "stem_ch": 48,
+    "stage_ch": 64,
+    "cond_dim": 32,
+    "num_experts": 4,
+    "expert_hidden": 64,
+    "heteroscedastic": true,
+    "use_sheet_cond": true,
+    "max_sheet_idx": 256
+  },
+  "config": {
+    "batch_size": 256,
+    "epochs": 120,
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "warmup_epochs": 5,
+    "min_lr": 1e-06,
+    "aux_loss_weight": 0.3,
+    "aux_loss_decay": true,
+    "ordinal_thresholds": [
+      0,
+      15,
+      60
+    ],
+    "gnll_warmup_epochs": 10
+  },
+  "val_mae_teu": 6.5535,
+  "val_mae_move": 5.5914,
+  "test_mae_teu": 6.4616,
+  "test_mae_move": 5.3966,
+  "test_rmse_teu": 17.1754,
+  "test_rmse_move": 14.2094,
+  "test_r2_teu": 0.9334,
+  "test_r2_move": 0.9387
+}

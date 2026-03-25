@@ -1,0 +1,26 @@
+{
+  "4-Ens+TTA (完整模型)": {
+    "mae_teu": 1.7233,
+    "mae_move": 1.6902,
+    "rmse_teu": 4.4809,
+    "r2_teu": 0.9955
+  },
+  "4-Ens, 无TTA": {
+    "mae_teu": 1.8192,
+    "mae_move": 1.7868,
+    "rmse_teu": 4.697,
+    "r2_teu": 0.995
+  },
+  "单模型+TTA (seed=42)": {
+    "mae_teu": 2.1036,
+    "mae_move": 2.0408,
+    "rmse_teu": 5.4005,
+    "r2_teu": 0.9934
+  },
+  "单模型, 无TTA": {
+    "mae_teu": 2.383,
+    "mae_move": 2.3102,
+    "rmse_teu": 6.0824,
+    "r2_teu": 0.9916
+  }
+}

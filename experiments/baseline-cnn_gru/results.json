@@ -1,0 +1,19 @@
+{
+  "model": "CNN+GRU",
+  "temporal_k": 2,
+  "split": "file-level",
+  "seeds": [
+    42,
+    123,
+    456,
+    789
+  ],
+  "val_mae_teu": 6.8346,
+  "val_mae_move": 5.8959,
+  "test_mae_teu": 7.0271,
+  "test_mae_move": 5.976,
+  "test_rmse_teu": 15.3224,
+  "test_rmse_move": 12.6498,
+  "test_r2_teu": 0.947,
+  "test_r2_move": 0.9514
+}

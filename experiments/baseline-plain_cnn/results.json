@@ -1,0 +1,19 @@
+{
+  "model": "PlainCNN",
+  "temporal_k": 2,
+  "split": "file-level",
+  "seeds": [
+    42,
+    123,
+    456,
+    789
+  ],
+  "val_mae_teu": 2.4693,
+  "val_mae_move": 2.433,
+  "test_mae_teu": 2.5911,
+  "test_mae_move": 2.4453,
+  "test_rmse_teu": 6.7385,
+  "test_rmse_move": 5.9315,
+  "test_r2_teu": 0.9897,
+  "test_r2_move": 0.9893
+}

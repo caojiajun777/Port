@@ -1,0 +1,19 @@
+{
+  "model": "ConvLSTM",
+  "temporal_k": 2,
+  "split": "file-level",
+  "seeds": [
+    42,
+    123,
+    456,
+    789
+  ],
+  "val_mae_teu": 4.3578,
+  "val_mae_move": 4.0557,
+  "test_mae_teu": 4.5437,
+  "test_mae_move": 4.0055,
+  "test_rmse_teu": 10.3661,
+  "test_rmse_move": 8.6223,
+  "test_r2_teu": 0.9757,
+  "test_r2_move": 0.9774
+}
