@@ -167,4 +167,5 @@ python plot_scatter.py
 
 ## License
 
-MIT
+
+Jiajun CAO
